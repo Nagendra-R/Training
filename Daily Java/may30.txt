@@ -1,0 +1,11 @@
+maven
+
+
+mvn clean install compile
+mvn --version
+
+code coverage
+
+
+
+SonarCloud

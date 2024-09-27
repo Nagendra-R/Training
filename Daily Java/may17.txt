@@ -1,0 +1,28 @@
+may 17
+
+
+working with ByteStreams
+
+Files input/output
+	
+	Stream->
+	ByteStream has read and write methods
+	read() throws IOException(){
+	
+	
+	}
+	
+	
+	write() throws IOException(){               // file name 
+	FIleOutputStream op = new FIleOutputStream("data.txt ");
+	
+	
+	}
+	
+	
+	
+	
+	
+	Serilalization
+	marker interface
+	implements Serialzab

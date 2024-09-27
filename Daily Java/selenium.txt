@@ -1,0 +1,15 @@
+Selenium ::
+
+
+Selenium WebDriver 
+what is an API 
+
+API is present in the aplication layer..It is responsible for getting the request and giving the response 
+		frontend-(request)---> API <--(response)-----  Database 
+						Application Layer 
+						
+
+
+sesion 22: Css selectors 
+
+driver.managae().window().maximize();

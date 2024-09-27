@@ -1,0 +1,740 @@
+pages-base page
+WebDriver driver;
+Constructor of BasePage with 0 arguments
+PageFactory.initElements(driver,this)--initallzation of findBy
+
+
+
+
+test-basetest--
+beforemethod::
+driverManager.createDriver
+afterMEthod"::
+close()
+
+
+utils--
+configreader,DriverManager;
+configreader::
+getConfigValue-getProerty
+Static Properties prop = new Properties();
+prop.load(new FileReader("path of config.properties");
+DriverManager::
+crateDriver()
+getDriver()
+
+
+
+
+
+runner
+steps 
+setup-- frist config
+ clean 
+
+
+======
+
+Basepage 
+
+
+
+======junit
+
+unit testig--> 
+1.manual Testing
+2.Atomated Testing
+
+
+
+
+
+  @Test(priority = 1)
+    public void verifyUserCanSuccessfullyRegister() throws InterruptedException {
+        RegisterPage registerPage = new RegisterPage();
+
+        registerPage.openWebsite();
+        registerPage.firstRegisterBeforeLogin();
+        registerPage.fillTheRequiredFields(ConfigReader.configValue("firstname"), ConfigReader.configValue("lastname"), ConfigReader.configValue("password"), ConfigReader.configValue("confirmPassword"),ConfigReader.configValue("email"));
+        registerPage.clickOnRegisterButton();
+        Assert.assertTrue(registerPage.isHomePageDisplayed(), "registration  is failed");
+    }
+
+
+    @Test(priority = 2)
+    public void verifyUserCanLoginAndLogout() throws InterruptedException {
+        RegisterPage registerPage = new RegisterPage();
+
+        registerPage.openWebsite();
+        registerPage.clickOnLogIn();
+        registerPage.fillTheEmailAndPassword(ConfigReader.configValue("email"), ConfigReader.configValue("password"));
+        registerPage.clickOnMainLogin();
+        Assert.assertTrue(registerPage.isUserCanLogin(), "login is failed");
+        registerPage.clickOnLogout();
+        Assert.assertTrue(registerPage.isUserCanLogout(), "logout is failed");
+
+    }
+======
+
+
+textfield
+  - sendkeys()
+  -clear()
+  
+button
+ - click()
+ - submit()
+ 
+ 
+ 
+ 
+ --xpath 
+	- absolute path -->
+	- relative path -->
+	- 
+	
+	//*[@id="input"]
+	
+	
+	
+	
+	
+	
+	
+	validation is possible
+
+	
+	
+	s=""
+	
+	s=s+
+	
+	
+	
+	
+	//implicit wait after the driver instead of sleep method
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		
+		
+
+
+actions::
+	
+	
+	
+	iframe
+	
+	
+	
+	
+takescreenshot 
+Random Number 
+Javascript Exceutor
+	addingBorder
+	Scroll
+	JavascriptExceutor javascript 
+	
+FileUpload
+currentworking Path
+
+
+
+
+
+
+download a file from file and keep it in the other floder 
+
+TesteNg
+
+
+@Test
+@BeforeClass
+@AfterClass
+@BeforeTest
+@AfterTest
+
+5
+beforeClass
+BEforeMethod
+BeforeGoup
+BeforeMethid
+
+
+testng
+priority of test
+dependsOnOtherMethods
+
+
+
+===================
+softAssert
+HardAssert
+
+report - test_Output
+
+how to read data from excel sheet 
+properties file
+text file 
+
+
+
+
+
+====================
+
+TestNG framework
+from scratch
+
+manualTesting
+
+FindBy annotation
+
+================
+
+cucumber
+TDD tools are Junit,Testng
+BDD tools are Cucumber,Jbehave,SpecFlow
+
+
+Gherkin language is a part of cucumber 
+
+
+gherkin keyword 
+--given when then and scenario feature background scenario outline exmples
+
+
+ selenium
+ testng
+ cucumber
+ 
+ 
+ 
+=======================
+ 
+ testng cucumber architecture
+ maven --> manage dependency 
+			project structure 
+			bulid tool
+			
+			
+  jenkis
+  
+
+===================
+
+
+BDD--Cucumber
+Gherkin language-Given,When,Then,And
+Scenario Outline:
+Examples::
+
+testNG 
+Cucumber
+
+
+CUcumber report generaton
+data tables
+
+
+
+==================
+
+
+
+write the feature scenario code for ebay page 
+
+Scenario : 
+	Given user open the website 
+	Then validate user on th ebay home page 
+	When search for "loptops" in the home page
+	Then validate user is on suggestion page 
+	When enter the frist suggestion item 
+	Then validate user on the item details page 
+	When click on the add to cart button 
+	Then validate the user on the check page
+	When user click on ebay page 
+	Then validate user on the ebay home page
+	When search for "shirts" in the home page
+	Then validate user is on suggestion page 
+	When enter the frist suggestion item 
+	Then validate user on the item details page
+	When click on the add to cart button
+	
+	
+	====================================
+	
+	
+	
+	jenkis insatllation 
+	cmd -->  java -jar jenkis.war 
+	localhost 
+	terminnology 
+	check in 
+	cmmmit
+	github
+			qa environmnet
+			stage environment
+			production environment
+			
+	
+	
+	
+	
+	
+	=========================
+	
+revision
+SSH -- accessing of server files
+pwd - present working directory
+======
+
+Api Testing
+
+HTTP
+
+COMPONETS O REQUEST:
+4
+r url----http
+r method--get,post,put,delete
+r body
+r header fields
+
+same for response ::
+res code
+res body
+res header
+
+
+1xx-take the request and continue the process
+2xx-suceesful
+3xx-redirectional
+4xx-clint error
+5xx-server error
+=======
+
+features of postman ::
+
+json
+collections 
+environments
+
+scripts for json 
+ supports 2 ->json &  csv
+
+
+
+========
+REST Api
+rest assured
+rest assured dependeency 
+
+<dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+		
+		
+rest assured own framework
+==================
+
+jackson libary 
+
+steps features utils
+
+pojo classes
+=======
+
+karate
+Java17 version 
+
+===
+
+
+
+
+
+
+
+
+
+
+
+URL: https://reqres.in/
+
+URL: https://jsonplaceholder.typicode.com/
+
+URL: https://gorest.co.in/
+
+URL: https://petstore.swagger.io/#/user
+
+﻿URL: Dummy sample rest api - dummy.restapiexample.com
+
+URL: FreeFakeAPI (Post)
+
+URL: FreeFakeAPI (Comment)
+
+URL: REST API - ready to use (restful-api.dev)
+================
+
+https://petstore.swagger.io/v2/user/login?username=UST&password=123456
+
+
+
+======================
+
+mobile automation
+
+nodejs
+andorid studio
+apm
+appium
+
+expedia.apk
+DesiredCapilibates
+
+adb devices
+appium
+
+4 compenents 
+
+platforName
+deviceNAME
+automationName
+app
+=============
+
+npm UI tool
+
+node -v == node is there or not 
+appium
+npm i -g appium  to install the node js
+SessionNotCreatedException  --  
+npm i -g appium to install appium 
+
+500 - server error
+
+setup--
+
+
+==================
+
+InvalidElementStateException-- cannot pass element 
+
+SessionNotCreatedException
+NoSuchElementException
+InvalidLocator
+appium 
+expedia
+============
+
+scroll
+swipe
+
+getLoaction
+scroll
+fingermove
+fingerdown
+fingerup
+
+====
+
+following Slibing::
+TimeOutException
+InvalidSelectorException
+searchButton = driver.perform(,ImmutableMap<"action","Search">);
+
+UnsupportedCommandException
+
+====
+
+placethedownload apk into android 
+and goes to .xml file inthe down 
+search package 
+
+
+search with LAUNCH
+
+@FindBy(xpath ="//android.widget.TextView[contains(@text,'_user')]")
+    List<WebElement> listOfUsernames;
+	
+	
+	
+===========
+
+	mac
+	
+	terminal
+	
+	
+	int width = driver.manage().window().getSize().getWidth();
+    int height = driver.manage().window().getSize().getHeight();
+    scrollOrSwipe(width/2,height/2,width/2,0);
+	
+	SupportsContextSwitching supportsContextSwitching = (SupportsContextSwitching) driver;
+        System.out.println(Arrays.toString(supportsContextSwitching.getContextHandles().toArray()));
+		[NATIVE_APP]
+		
+		classCastException
+		
+		
+===================
+
+capston project 
+====
+
+setcapilabites("orientation","LANDSCAPE");
+tosearch OR enter 
+driver.excuteScript("mobile:performEditorAction",ImmutableMap.of("action","search"));
+
+==========================
+
+public void clickElementByJS(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);
+    } 
+	
+	
+	=============
+		
+		com.ril.ajio-->package
+		com.ril.ajio.launch.activity.SplashScreenActivity-->activityajio
+		
+		=======================
+		
+		ctrl + alt --> left arrow 
+		ctrl+ alt ----> right arrow
+		ctrl +alt +T
+		
+		====
+			
+
+cloud computing
+
+saas
+paas
+iaas
+
+depolyment models - public , private,communiy,hybird
+
+
+AWS Infrastructure
+linux
+yum apt
+
+pwd - present working directory
+ 
+ 
+ esv - elasic search volume 
+ 
+ 
+=========
+
+ec2 service 
+s3
+webserver 
+nigix
+
+sudo 
+ip addressF
+
+
+s3
+glacirer
+
+ =================
+ 
+ cloudwatch
+ alarm
+ sns
+ + symbol insufficient  data 
+ 
+ 
+ IAM
+ 
+ 
+ cloudwatchlogs
+ elasticbeansstalk
+ 
+ 
+ ===
+ vpc
+
+waf ==>
+order no ::#USTWEL-OVP3H2
+
+
+cloud concepts
+cloud security 
+ec2,s3,vpcbulid and deploy app in ebs 
+database services in cloud 
+
+
+======================
+
+
+playwright 
+==========
+ actions
+ iframe
+ ===
+ 
+ 
+ //switch to the new window 
+
+ Set<String> handles = driver.getWindowHandles();
+	String[] handleArray = handles.toArray(new String[0]);
+	// Switch to the new tab or window (usually the second handle in the list)
+	driver.switchTo().window(handleArray[1]);
+ 
+ 
+ 
+ =======
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ++++
+ 
+ retest
+ 
+ desiredcapabiluies
+ 
+ implicitlyWait & explicitWait
+ 
+ 
+ 
+ 
+ 
+ MutableCapabilities caps = new MutableCapabilities();
+caps.setCapability("platformName", "Android");
+caps.setCapability("appium:app", "storage:filename=expedia.apk");  // The filename of the mobile app
+caps.setCapability("appium:deviceName", "Android GoogleAPI Emulator");
+caps.setCapability("appium:platformVersion", "12.0");
+caps.setCapability("appium:automationName", "UiAutomator2");
+MutableCapabilities sauceOptions = new MutableCapabilities();
+sauceOptions.setCapability("username", "oauth-nagrachamallu11-93793");
+sauceOptions.setCapability("accessKey", "57eab063-37fb-4108-9b08-24d027780755");
+sauceOptions.setCapability("build", "appium-build-9JZDI");
+sauceOptions.setCapability("name", "<your test name>");
+sauceOptions.setCapability("deviceOrientation", "PORTRAIT");
+caps.setCapability("sauce:options", sauceOptions);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		
+		
+		
+		
+			
+			
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+

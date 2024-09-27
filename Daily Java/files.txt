@@ -1,0 +1,96 @@
+Files
+
+
+
+OutputStream 
+
+-----> 
+
+Creation of new File 
+
+read ----------- InputStream (Not modification) 
+
+				FileInputStream to read the data
+				
+				
+				
+				
+				
+
+
+
+
+write -----------   FileOutputStream
+
+write method is write the data into the file 
+				converting into bytes
+				
+				FileOutputStream fout=new FileOutputStream("C:\\Users\\280751\\Pictures\\Saved Pictures\\testout.txt");
+				
+				
+				
+				
+				
+in is a references variable of type InputStream
+
+
+
+
+                                                                 Stream 
+																    |
+																	|
+								ByteStream                                                     CharacterSream		
+									|
+									|
+				InputStream                  OutputStream
+                                    								
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+													
+Joins in SQL ::
+
+
+Inner Join::  
+
+select e1.empnamme,e2.empnamme from employee1 inner join e2 on e1.dept==e2.dept;				
+
+
+											

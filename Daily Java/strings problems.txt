@@ -1,0 +1,12 @@
+21 june
+Minimum number of times A has to be repeated such that B is a substring of it	:::::     No 
+Find Excel column name from a given column number	                            :::::     No
+
+
+24 July 
+
+
+
+ 
+ 
+ 

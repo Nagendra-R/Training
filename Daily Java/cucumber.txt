@@ -1,0 +1,28 @@
+Cucumber ::
+
+
+when you are using Examples: in the feature file  then we neede to write the Scenario Outline:
+
+@RunWith(Cucumber.class)
+runwith - to excute .feature files as Junit tests
+Cucumber.class - to reading feature file and connect with step defintions
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    features = "src/test/resources/features", // Path to your feature files
+    glue = "com.example.stepdefinitions", // Package containing step definition classes
+    plugin = {"pretty", "html:target/cucumber-reports"}, // Reporting options
+    tags = "@SmokeTest" // Tags to filter which tests to run
+)
+
+
+
+RunWith(Cucumber.class): This tells JUnit to use the Cucumber class to run the tests.
+@CucumberOptions: This is used to specify various options for running the Cucumber tests, such as:
+features: Path to the directory containing feature files.
+glue: Package where step definition classes are located.
+plugin: Reporting options to generate test reports.
+tags: Filter to run specific tests based on tags.
+
+===============================
+Threads:::

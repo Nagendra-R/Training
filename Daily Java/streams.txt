@@ -1,0 +1,35 @@
+rewards.add(new Reward(rewardId,description,pointsRequired));
+
+
+
+if(!customers.containsKey(customerId)){
+      System.out.println("Customer not registered yet!!");
+      return;
+    }
+
+    Optional<Reward> optional=rewards.stream().filter(c->c.getRewardId()==rewardId).findAny();
+
+    if(optional.get().getRewardId()!=rewardId){
+      System.out.println("Reward not present");
+      return;
+    }
+    Customer cus=customers.get(customerId);
+    cus.setPoints(cus.getPoints()-optional.get().getPointsRequired());
+    System.out.println("Reward is redeemed");
+  }
+  
+  
+  
+  
+  
+  
+  
+if(!customers.containsKey(customerId)){
+      System.out.println("Customer is not registered");
+    }else{
+      Customer customer = customers.get(customerId);
+      System.out.println(customerId + "|  "+ customer.getName() +"|  "+customer.getPhone());
+    }
+   
+  
+  

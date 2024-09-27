@@ -1,0 +1,300 @@
+may16
+
+may15
+
+unit testing ::
+		@Test
+		@Display("")
+		
+		
+		
+int min = Integer.MAX_VALUE;
+int max = Integer.MIN_VALUE:
+
+map.put(map.put(arr[i],map.getOrDefault(arr[i],0)+1));
+    or
+check if:
+		map.containsKey(key)
+		then map.put(map.get(key),map.get(key)+1)
+	else:
+	map.put(key,1);
+	
+	
+	
+	
+
+Comparable and Compartaor 
+
+
+
+
+Java 8 
+
+Comparator-> sorting 
+skip
+findFrist()
+Optional
+.isPresent()
+findFrist()
+Collectors.groupingBy()
+Collectors.counting()
+.collect()
+.mapToInt()  Integer to int
+
+Compartaor.comparing(Student::getAge)
+.anyMatch()-boolean
+.allMatch() - boolean
+	
+	
+====================
+jenkis
+jenkis
+JavascriptExecutor jsTopLevelMaven = (JavascriptExecutor) driver;
+        jsTopLevelMaven.executeScript("arguments[0].click();",topLevelMavenTargets);
+		
+		
+======
+		
+
+Java 8 features
+
+Internal working of List ,Set and Map   ::: 
+
+Generics 
+Wrapper classes
+Enums
+Tokenizers
+
+
+
+cntrl+alt+l---> make good looking 
+cntl+shift+R--> replace ALl
+
+
+switch to new window --  driver.switchTo().window(driver.getWindowHandles().stream().toList().get(1));
+
+
+=====>
+
+Threads 
+	no of ways creating a thread 
+	life cycle of thread
+	sleep 
+	Runnable is more prefable than THread bcoz of multiple inheritance
+	Thread.yield()--- > wait the curreent excuting thread excute other thread with same priority frist 
+	t.jon()---> stop the current execution thread and after finish of t will excute 
+	
+	deadLock :: when you call two joins nothing wil happen it goes to deadLock situation 
+	==========
+	sychonized --> synchorized keyword does not allow another thread when it excuting
+	
+	object level 
+	class level 
+	communication between two threads 
+	
+	
+	==========
+	communication bw 2 threads 
+	Time scheluder
+	
+
+====
+
+JDBC 
+-> connection 
+close
+JDBC 
+JDBC Drivers
+
+
+==
+register and load 
+connection 
+platfporm
+excuetequery 
+resultset
+close the connection
+=====
+
+ 
+equals 
+hashcode- hash 
+getClass()
+Object 
+toString()
+
+Object class -- equals(),hashcode(),toString(),wait(),notify(),notifyAll()
+
+UUID
+
+Java Concurrency
+
+===
+
+singleTon Class
+
+
+
+
+
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+Annottion
+Architecture 
+Spring beans 
+Spring dependency
+IOC 
+persisteance layer --> API--> Database
+UI layer 
+spring MVC 
+DAO
+JSP
+servelts
+herbinarte 
+advanced version of JDBC is Hibernate 
+Controller
+spring jPA
+
+@autowired
+=============
+
+
+spring core module 
+spring context 
+AOP
+DAO
+web mvc 
+security 
+
+=====
+Offical documetation::
+
+IOC Container-- creation of object by spring when you need 
+Beans 
+
+BeanFactory --INterface 
+AppliactionContext -- sub interface
+
+beans are nothing but objects 
+Application context interface is a IOC container that manages creation, instationzation and assembling of beans
+
+IOC Container :: It is responsible for managing the beans (Objects) and their dependices. It uses the DI that provides the objects that application needs ,
+ removing the responility of instiate and managing objects from the application code
+ 
+ The IoC container manages the lifecycle of objects (known as beans in Spring) and their dependencies.
+ 
+ How DI Works in Spring
+		In Spring, DI can be done in several ways, commonly through:
+	Constructor Injection: Dependencies are provided as arguments to the constructor when the bean is created.
+	Setter Injection (Properties Injection): Dependencies are provided by calling setter methods on the object after it has been constructed.
+	Method Injection: Dependencies can also be provided as arguments to a factory method that returns the object.
+ 
+
+
+IOC Container 
+1.beans
+2.context 
+
+
+
+Configuration metadata 
+ Via::
+ import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main {
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        MyService myService = context.getBean(MyService.class);
+        myService.performTask();
+    }
+}
+
+
+What is Configuration Metadata?
+
+Configuration Metadata is the information that tells the Spring IoC container how to instantiate (create), configure, and assemble the components (beans) of your application.
+
+===
+spring core module is responsible for managing dependencies in an pplication 
+class wil folow one design pattern ;
+
+======
+
+spring jPA Repository 
+--> 3 types 
+sortingAndPathing
+JpaRepository
+crudjparepository
+
+
+
+=============
+
+spring dependency ---> spring-context
+
+Inversion of control --> .xml by beans 
+Dependency Injection --> constructor or setter 
+
+
+===
+
+IOC -- Inversion of control ---> giving control to someone else 
+in spring we dont create objects we work with beans 
+====
+
+for everytime a new instance is created by using in beans in xml by scope="prototype"
+
+lifecycle of a bean 
+start--> inside in xml inside bean init-method
+destroy --> inside in xml inside bean  destory-method 
+
+component
+autowired-->constructr,setter injection 
+field level injection make that interface field as @Autowired
+======
+
+NoUniqueBeanDefination  --- two classes with @Component then we uses @Qualifier("name of the class")
+elasticbeanstak
+============
+<property name = ref = > for setter Injection 
+<constructor-arg ++> constructor injection
+by ioc container classes becoming loosely coupling 
+===========
+sep-1
+
+basic spring project from kunal ashwathi github 
+
+
+DI
+IOC  are design patterns 
+
+DI ::
+
+spring provides the core module in that IOC,DI with that we can have acheive loosely coupling 
+via the xml based Configuration 
+Its like credit card and debit card and we can do the payment via the  swipingMachine as payment way as interface
+here we uses constructor injjection 
+In the pom.xml file we need to 
+
+@Component -- class as a spring managed bean 
+
+==============
+
+
+

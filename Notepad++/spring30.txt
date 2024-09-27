@@ -1,0 +1,29 @@
+spring 30
+==
+spring intilazer  project 
+@Component 
+@Getter and @Setter as lombok  === @Data
+
+=====
+tomcat server ->port 8080
+api response -> status code
+2xx --> success 
+4xx --> client error 
+5xx --> server error, backend error [your ]
+
+payload   --->API  --->Response
+in direct google 
+localhost:8080/endpoints
+
+@RestController
+@RequestMapping("students")
+@PathVariable("id") int studnetID
+ResponseEntity<Student>
+
+@RequestParam--->for query parameters 
+crud opertions 
+
+
+
+
+@GetMapping("{id}")
